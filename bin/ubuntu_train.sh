@@ -14,7 +14,7 @@ char_vocab_file=$DATA_DIR/char_vocab.txt
 
 lambda=0
 
-batch_size=128
+batch_size=64
 
 dropout_keep_prob=1.0
 
@@ -29,12 +29,12 @@ PYTHONPATH=${PKG_DIR}:$PYTHONPATH python -u ${PKG_DIR}/answer_selection/train.py
                 --embeded_vector_file $embedded_vector_file \
                 --vocab_file $vocab_file \
                 --valid_file $valid_file \
-                --max_sequence_length 180 \
+                --max_sequence_length 100 \
                 --embedding_dim $DIM \
                 --l2_reg_lambda $lambda \
                 --dropout_keep_prob $dropout_keep_prob \
                 --batch_size $batch_size \
-                --rnn_size 100 \
+                --rnn_size 50 \
                 --evaluate_every 1000 \
                 --char_vocab_file $char_vocab_file \
                 --max_word_length $max_word_length
