@@ -18,7 +18,7 @@ batch_size=64
 
 dropout_keep_prob=1.0
 
-DIM=400
+DIM=200
 
 max_word_length=18
 
