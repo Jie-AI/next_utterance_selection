@@ -34,7 +34,7 @@ PYTHONPATH=${PKG_DIR}:$PYTHONPATH python -u ${PKG_DIR}/answer_selection/train.py
                 --l2_reg_lambda $lambda \
                 --dropout_keep_prob $dropout_keep_prob \
                 --batch_size $batch_size \
-                --rnn_size 200 \
+                --rnn_size 100 \
                 --evaluate_every 1000 \
                 --char_vocab_file $char_vocab_file \
                 --max_word_length $max_word_length
